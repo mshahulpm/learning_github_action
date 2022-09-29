@@ -9,18 +9,18 @@ app.use(cors())
 
 
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json({
         message: "welcome to node server"
     })
 })
 
 
-app.get('/users', (req, res) => {
+app.get('/api/users', (req, res) => {
     res.json(users)
 })
 
-app.get('/books', (req, res) => {
+app.get('/api/books', (req, res) => {
     res.json(books)
 })
 
